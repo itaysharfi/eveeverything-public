@@ -55,6 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => observerNav.observe(section));
 
+  // === Highlight active page in nav (for workshop page) ===
+  if (window.location.pathname.includes('workshop')) {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'workshop.html') {
+        link.classList.add('active');
+      }
+    });
+  }
+
   // === Fade-in on scroll ===
   const fadeElements = document.querySelectorAll('.fade-in');
 
