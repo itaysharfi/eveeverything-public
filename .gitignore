@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if added later)
+node_modules/
+package-lock.json
+
+# Environment — NEVER commit these
+.env
+.env.*
+
+# Build artifacts
+dist/
+.cache/
+
+# Claude — contains local config, plans, memory
+.claude/
+
+# Scraping artifacts — never commit raw scraped data
+scraped_data.json
+*_screenshot.png
